@@ -1,0 +1,45 @@
+@use 'minimize.scss';
+@use 'left-side.scss';
+@use 'right-side.scss';
+@import 'helpers.scss';
+
+.body{
+    &_wrapper{
+        background-color: #c9f8fe;
+        height: 727px;
+        width: 1440px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.page{
+    &_container{
+        width: 1000px;    
+        height: 570px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Roboto";
+
+    }
+    &_left-side {
+        width: 450px;
+        height: inherit;
+        position: relative;
+        background: -210px 0px no-repeat url('../img/background.jpg');
+        background-size: cover;
+
+    }
+
+    &_right-side {
+        width: 550px;
+        height: 100%;
+        background-color: #fff;
+        @include d-flex(row,center,center);
+    }
+
+}
+
