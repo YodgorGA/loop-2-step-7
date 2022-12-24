@@ -4,8 +4,10 @@
     &_content{
         width: 480px;
         height: 490px;
+        background-color: inherit;
         @media screen, (max-width:319px) {
             width: 100%;
+            height: fit-content;
         }
     }
     &_header{
@@ -13,6 +15,7 @@
         height: 40px;
         @media screen, (max-width:319px) {
             width: 100%;
+            margin-top: 10px;
         }
     }
     &_body{
