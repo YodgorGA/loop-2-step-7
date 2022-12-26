@@ -5,7 +5,13 @@
         width: 480px;
         height: 490px;
         background-color: inherit;
-        @media (max-width:426px),(max-width:376px),(max-width:321px) {
+        @media  (max-width:769px) {
+            width: 420px;
+            height: fit-content;
+            box-sizing: border-box;
+            padding: 0px 20px;
+        }
+        @media(max-width:426px),(max-width:376px),(max-width:321px) {
             width: 100%;
             height: fit-content;
         }
@@ -42,6 +48,9 @@
         font-size: 30px;
         font-weight: 500;
         color:#000;
+        @media (max-width:769px) {
+            font-size: 24px;
+        }
         @media (max-width:426px),(max-width:376px),(max-width:321px) {
             padding-left: 10px;
         }
@@ -64,12 +73,19 @@
         height: 30px;
         font-size: 20px;
         font-weight: 400;
+        @media (max-width:769px) {
+            font-size: 16px;
+        }
     }
     &_posts {
         width: 100%;
         height: 360px;
         @include d-flex(column,space-between,center);
         margin-top: 50px;
+        @media (max-width:769px) {
+            margin-top: 10px;
+            height: 300px;
+        }
         @media (max-width:426px) {
             margin-top: 0px;
         }
@@ -100,9 +116,15 @@
             color:#000;
             margin-right: 20px;
             transition: 0.3s;
+            @media (max-width:769px) {
+                margin-right: 15px;
+            }
         }
         &:last-child{
             position: relative;
+        }
+        @media (max-width:769px) {
+            margin-right: 15px;
         }
     }
     &_blur{
@@ -150,6 +172,9 @@
         height: 40px;
         @include d-flex(row,flex-start);
         line-height: 121%;
+        @media (max-width:769px) {
+            padding-right: 10px;
+        }
         @media (max-width:321px) {
             height: 100%;
             font-size: 14px;
@@ -167,6 +192,9 @@
         text-shadow: 0px 0px 1px;
         font-size: 39px;
         margin-right: 10px;
+        @media (max-width:769px) {
+            font-size: 34px;
+        }
         @media (max-width:321px) {
             margin-right: 5px;
             font-size: 34px;
@@ -177,6 +205,9 @@
         @include d-flex(column,space-between,flex-start);
         width: 32px;
         height: 31px;
+        @media (max-width:769px) {
+            height: 24px;
+        }
         @media (max-width:321px) {
             height: 24px;
         }
@@ -187,6 +218,9 @@
     &_month {
         font-size: 14px;
         font-weight: 700;
+        @media (max-width:769px) {
+            font-size: 12px;
+        }
         @media (max-width:321px) {
             font-size: 12px;
         }
@@ -195,6 +229,9 @@
     &_year {
         font-size: 14px;
         font-weight: 500;
+        @media (max-width:769px) {
+            font-size: 12px;
+        }
         @media (max-width:321px) {
             font-size: 12px;
         }
