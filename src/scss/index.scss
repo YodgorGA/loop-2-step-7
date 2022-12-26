@@ -13,6 +13,10 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        @media (min-width:1919px) {
+            width: 1920px;
+            height: 100vh;
+        }
         @media (max-width:769px) {
             width: 768px;
             height: 100%;
@@ -44,23 +48,27 @@
         flex-direction: row;
         justify-content: center;
         font-family: "Roboto";
+        @media (min-width:1919px) {
+            width: 1700px;
+            height: 967px;
+        }
         @media (max-width:769px) {
             width: 100%;
             height: 450px;
         }
         @media (max-width:426px) {
             width: 100%;
-            height: 900px;
+            height: 700px;
             flex-direction: column;
         }
         @media (max-width:376px) {
             width: 100%;
-            height: 900px;
+            height: 700px;
             flex-direction: column;
         }
         @media (max-width:321px) {
             width: 100%;
-            height: 840px;
+            height: 700px;
             flex-direction: column;
         }
         
@@ -72,6 +80,11 @@
         position: relative;
         background: -210px 0px no-repeat url('../img/background.jpg');
         background-size: cover;
+        @media (min-width:1919px) {
+            width: 765px;
+            background:-300px 0px no-repeat url('../img/background.jpg');
+            background-size: cover;
+        }
         @media (max-width:769px) {
             width: 100%;
             background:-180px 0px no-repeat url('../img/background.jpg');
@@ -79,17 +92,17 @@
         }
         @media (max-width:426px) {
             width: 100%;
-            background:-85px 0px no-repeat url('../img/background.jpg');
+            background:-40px 0px no-repeat url('../img/background.jpg');
             background-size: cover;
         }
         @media (max-width:376px){
             width: 100%;
-            background:-100px 0px no-repeat url('../img/background.jpg');
+            background:-60px 0px no-repeat url('../img/background.jpg');
             background-size: cover;
         }
         @media (max-width:321px){
             width: 100%;
-            background:-130px 0px no-repeat url('../img/background.jpg');
+            background:-90px 0px no-repeat url('../img/background.jpg');
             background-size: cover;
         }
         
@@ -100,7 +113,10 @@
         height: 100%;
         background-color: #fff;
         @include d-flex(row,center,center);
-        @media (max-width:426px),(max-width:376px),(max-width:321px) {
+        @media (min-width:1919px) {
+            width: 935px;
+        }
+        @media(max-width:426px),(max-width:376px),(max-width:321px) {
             width: 100%;
             @include d-flex(row,center,flex-start);
         }
